@@ -27,7 +27,7 @@
     "cz": "git-cz"
   },
   "config": {
-    "commitizen": {
+    "g": {
       "path": "@commitlint/cz-commitlint"
     }
   },
@@ -38,8 +38,10 @@
     "@babel/register": "^7.0.0",
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
+    "@commitlint/cz-commitlint": "^17.6.7",
     "@commitlint/prompt-cli": "^17.6.7",
     "babel-plugin-istanbul": "^5.1.0",
+    "commitizen": "^4.3.0",
     "cross-env": "^5.2.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
