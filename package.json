@@ -1,12 +1,12 @@
 {
-  "name": "@t2j5/clone",
+  "name": "@tj/clone",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
   "module": "dist/index.esm.js",
   "sideEffects": false,
-  "files": ["dist", "src"],
+  "files": ["/dist", "LICENSE"],
   "scripts": {
     "build:self": "rollup -c config/rollup.config.js",
     "build:esm": "rollup -c config/rollup.config.esm.js",
