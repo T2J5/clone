@@ -27,25 +27,25 @@ unit test ensure it supports the following environments.
 npm installation
 
 ```bash
-$ npm install --save @tj/clone
+$ npm install --save @t2j5/clone
 ```
 
 Node.js
 
 ```js
-var name = require('@tj/clone').name;
+var name = require('@t2j5/clone').name;
 ```
 
 webpack
 
 ```js
-import { name } from '@tj/clone';
+import { name } from '@t2j5/clone';
 ```
 
 Require.js
 
 ```js
-requirejs(['node_modules/@tj/clone/dist/index.aio.js'], function (tj_clone) {
+requirejs(['node_modules/@t2j5/clone/dist/index.aio.js'], function (tj_clone) {
     var name = tj_clone.name;
 })
 ```
@@ -53,9 +53,9 @@ requirejs(['node_modules/@tj/clone/dist/index.aio.js'], function (tj_clone) {
 Browser
 
 ```html
-<script src="node_modules/@tj/clone/dist/index.aio.js"></script>
+<script src="node_modules/@t2j5/clone/dist/index.aio.js"></script>
 
 <script>
-    var name = tj_clone.name;
+    var name = t2j5_clone.name;
 </script>
 ```
