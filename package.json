@@ -24,10 +24,11 @@
     "lint:prettier": "prettier --check .",
     "prepare": "husky install",
     "lint": "eslint src config test",
-    "cz": "git-cz"
+    "cz": "git-cz",
+    "ci": "commit"
   },
   "config": {
-    "g": {
+    "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
   },

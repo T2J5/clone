@@ -3,15 +3,16 @@
 
 name: CI
 
+# 指定触发workflow的条件
 on:
   push:
-    branches: [ "master" ]
+    branches: ['master'] # 限定分支
   pull_request:
-    branches: [ "master" ]
+    branches: ['master']
 
 jobs:
   commitlint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # 指定运行环境
     steps:
       - uses: actions/checkout@v2
         with:
@@ -36,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [14.x, 16.x, 18.x] # 指定多个版本都要执行
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
