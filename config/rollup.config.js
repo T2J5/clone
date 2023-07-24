@@ -8,4 +8,4 @@ module.exports = {
     banner: common.banner,
   },
   plugins: [common.getCompiler()],
-}
+};

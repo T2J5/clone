@@ -6,9 +6,9 @@ A professional deep clone library 最专业的深拷贝库
 
 unit test ensure it supports the following environments.
 
-| IE/Edge | Chrome | Firefox | Safari | Opera | IOS  | Android | Node  |
-| ------- | ------ | ------- | ------ | ----- | ---- | ------- | ----- |
-| 6+      | 23+    | 4+      | 6+     | 10+   | 5+   | 2.3+    | 0.10+ |
+| IE/Edge | Chrome | Firefox | Safari | Opera | IOS | Android | Node  |
+| ------- | ------ | ------- | ------ | ----- | --- | ------- | ----- |
+| 6+      | 23+    | 4+      | 6+     | 10+   | 5+  | 2.3+    | 0.10+ |
 
 ## Directory
 
@@ -24,6 +24,7 @@ unit test ensure it supports the following environments.
 ```
 
 ## Usage
+
 npm installation
 
 ```bash
@@ -33,21 +34,21 @@ $ npm install --save @t2j5/clone
 Node.js
 
 ```js
-var name = require('@t2j5/clone').name;
+var name = require("@t2j5/clone").name;
 ```
 
 webpack
 
 ```js
-import { name } from '@t2j5/clone';
+import { name } from "@t2j5/clone";
 ```
 
 Require.js
 
 ```js
-requirejs(['node_modules/@t2j5/clone/dist/index.aio.js'], function (tj_clone) {
-    var name = tj_clone.name;
-})
+requirejs(["node_modules/@t2j5/clone/dist/index.aio.js"], function (tj_clone) {
+  var name = tj_clone.name;
+});
 ```
 
 Browser
@@ -56,6 +57,6 @@ Browser
 <script src="node_modules/@t2j5/clone/dist/index.aio.js"></script>
 
 <script>
-    var name = t2j5_clone.name;
+  var name = t2j5_clone.name;
 </script>
 ```

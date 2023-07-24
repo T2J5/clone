@@ -25,4 +25,3 @@ export function clone(source) {
   }
   return target;
 }
-

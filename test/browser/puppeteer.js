@@ -29,7 +29,7 @@ const puppeteer = require('puppeteer');
     process.exit(1);
   }
 
-  console.log(`[browser] 测试用例全部通过浏览器测试 🎉`)
+  console.log(`[browser] 测试用例全部通过浏览器测试 🎉`);
 
   await browser.close();
 })();

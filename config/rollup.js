@@ -15,7 +15,7 @@ exports.banner = banner;
  * 不使用独立的Babel配置文件，所以babelrc和modules都设置false
  * loose设置为true 是为了兼容IE8
  *
-*/
+ */
 function getCompiler(opt) {
   return babel({
     babelrc: false,
@@ -25,7 +25,8 @@ function getCompiler(opt) {
         '@babel/preset-env',
         {
           targets: {
-            browsers: 'last 2 versions, > 1%, ie >= 8, Chrome >= 45, safari >= 10',
+            browsers:
+              'last 2 versions, > 1%, ie >= 8, Chrome >= 45, safari >= 10',
             node: '0.12',
           },
           modules: false,
@@ -38,11 +39,11 @@ function getCompiler(opt) {
         '@babel/plugin-transform-runtime',
         {
           corejs: 2,
-        }
-      ]
+        },
+      ],
     ],
     exclude: 'node_modules/*',
-  })
+  });
 }
 
 exports.getCompiler = getCompiler;
