@@ -13,15 +13,15 @@
     <!-- 占位符 -->
     <script>
       var libs = {
-        "expect.js": expect,
-        "../src/index.js": window["clone"],
+        'expect.js': expect,
+        '../src/index.js': window['clone'],
       };
       var require = function (path) {
         return libs[path];
       };
     </script>
     <script>
-      mocha.setup("bdd");
+      mocha.setup('bdd');
     </script>
     <script src="../test.js"></script>
     <script>

@@ -16,7 +16,7 @@ exports.banner = banner;
  * loose设置为true 是为了兼容IE8
  *
  */
-function getCompiler(opt) {
+function getCompiler() {
   return babel({
     babelrc: false,
     runtimeHelpers: true,
